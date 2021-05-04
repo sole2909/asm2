@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }))
 app.set('view engine', 'hbs')
 
-var url = 'mongodb://localhost:27017'; // CẦN ĐỊA CHỈ ĐỂ KẾT NỐI
+var url = 'mongodb+srv://kai:doiaido11@cluster0.7rn9g.mongodb.net/test'; // CẦN ĐỊA CHỈ ĐỂ KẾT NỐI
 var MongoClient = require('mongodb').MongoClient;
 
 app.post('/update', async (req, res) => {
